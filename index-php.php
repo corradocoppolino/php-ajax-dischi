@@ -29,85 +29,17 @@
 
         <div class="m-container">
 
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
+            <?php foreach($database as $data) { ?>
 
             <div class="box">
 
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
+                <img src="<?php echo $data['poster'] ?>" alt="">
+                <h3><?php echo $data['author'] ?></h3>
+                <p><?php echo $data['year'] ?></p>
 
             </div>
 
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
-
-            <div class="box">
-
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
-                <h3>New Jersey</h3>
-                <p>1998</p>
-
-            </div>
+            <?php } ?>
 
         </div>
 
