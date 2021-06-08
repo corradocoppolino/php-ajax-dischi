@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Vue-dischi</title>
+</head>
+<body>
+    
+    <div id="app">
+
+        <header>
+    
+            <i class="fab fa-spotify"></i>
+    
+            <select id="genere">
+                <option value="rock">Rock</option>
+                <option value="indie">Indie</option>
+                <option value="rap">Rap</option>
+                <option value="trap" selected>Trap</option>
+            </select>
+    
+        </header>
+    
+        <main>
+    
+            <div class="m-container">
+    
+                <div v-for="(canzone,index) in canzoni" class="box">
+    
+                    <img :src="canzone.poster" alt="">
+                    <h3>{{canzone.author}}</h3>
+                    <p>{{canzone.year}}</p>
+    
+                </div>
+    
+            </div>
+    
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
