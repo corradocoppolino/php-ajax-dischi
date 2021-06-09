@@ -18,11 +18,10 @@
     
             <i class="fab fa-spotify"></i>
     
-            <select id="genere">
-                <option value="rock">Rock</option>
-                <option value="indie">Indie</option>
-                <option value="rap">Rap</option>
-                <option value="trap" selected>Trap</option>
+            <select v-model="genereSearch" @change="getApi">
+                <option value="all">Seleziona un genere</option>
+                <option v-for="element in genere" :value="element">{{ element }}</option>
+                
             </select>
     
         </header>
