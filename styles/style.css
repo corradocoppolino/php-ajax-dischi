@@ -39,13 +39,12 @@ main{
     margin: auto;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: red;
 }
 
 .box{
-    margin-top: 20px;
+    margin: 20px 8px 0 8px;
     height: 300px;
     width: calc(90%/5);
     background-color: #2E3A46;
